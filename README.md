@@ -20,11 +20,15 @@ DIT Download Log is a download log plugin for Discuz! X (CMS). There is no plan 
 
 7. ค้นหาโค้ดดังต่อไปนี้ (Ctrl+F)
 
-`{lang clicktodownload}`
+```
+{lang clicktodownload}
+```
 
 แล้วเพิ่มโค้ดดังต่อไปนี้ในบรรทัดถัดไป
 
-`<p><a href="plugin.php?id=dit_downloadlog&aid=$attach[aid]" onclick="showWindow('dit_downloadlog', this.href)" target="_blank">[ดูบันทึกการดาวน์โหลด]</a></p>`
+```
+<p><a href="plugin.php?id=dit_downloadlog&aid=$attach[aid]" onclick="showWindow('dit_downloadlog', this.href)" target="_blank">[ดูบันทึกการดาวน์โหลด]</a></p>
+```
 
 8. ทำซ้ำ **ข้อ 7** อีกครั้ง กับโค้ดที่อยู่ข้างล่าง
 9. เข้าไปยัง **AdminCP** > **เครื่องมือ** > **อัปเดตแคช** แล้วกดปุ่ม ตกลง เพื่ออัปเดตแคช
