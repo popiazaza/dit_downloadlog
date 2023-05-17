@@ -11,7 +11,7 @@ class plugin_dit_downloadlog_forum
         if ($attach = C::t('forum_attachment')->fetch($attachment[0])) {
             DB::insert('dit_downloadlog', array(
                 'uid' => $_G['uid'],
-                'username' => $_G['username'],
+                'username' => addslashes($_G['username']),
                 'aid' => $attachment[0],
                 'datetime' => TIMESTAMP,
             ), false, false, true);
